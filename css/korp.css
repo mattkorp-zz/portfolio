@@ -32,8 +32,25 @@ h1 {
   color: lime;
   border-right: .1em solid;
   width: 16.5em; /* fallback */
-  width: 48ch;   /* # chars */
-  margin: 2em 1em;
+  width: 53ch;   /* # chars */
+  margin: 4em 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 5s steps(50, end), blink-caret .5s step-end infinite alternate;
+     -moz-animation: typing 5s steps(50, end), blink-caret .5s step-end infinite alternate;
+       -o-animation: typing 5s steps(50, end), blink-caret .5s step-end infinite alternate;
+          animation: typing 5s steps(50, end), blink-caret .5s step-end infinite alternate;
+}
+
+
+h2 {
+  font: bold 200% Glass_TTY_VT220, monospace;
+  color: lime;
+  border-right: .1em solid;
+  width: 16.5em; /* fallback */
+  width: 27ch;   /* # chars */
+  margin-left: 1em;
+  margin-right: 1em;
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: typing 5s steps(42, end), blink-caret .5s step-end infinite alternate;
@@ -100,7 +117,7 @@ img:hover {
   margin-right: 5px;
   margin-top: 5px;
   text-decoration: none;
-  opacity: 0.5;
+  opacity: 0.75;
   -webkit-animation: fadein 10s;
      -moz-animation: fadein 10s;
        -o-animation: fadein 10s;
