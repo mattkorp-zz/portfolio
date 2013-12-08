@@ -1,0 +1,113 @@
+/* Typing */
+@-webkit-keyframes typing { from { width: 0; } }
+   @-moz-keyframes typing { from { width: 0; } }
+     @-o-keyframes typing { from { width: 0; } }
+        @keyframes typing { from { width: 0; } }
+
+/* Cursor */
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+   @-moz-keyframes blink-caret { 50% { border-color: transparent; } }
+     @-o-keyframes blink-caret { 50% { border-color: transparent; } }
+        @keyframes blink-caret { 50% { border-color: transparent; } }
+
+/* Footer Icons */
+@-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+   @-moz-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+     @-o-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+
+/* Nav Links */
+div.site-nav {
+  width: 100%;
+  text-align: right;
+  font-size: 0.8em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #333;
+}
+
+/* Header */
+h1 {
+  font: bold 200% Glass_TTY_VT220, monospace;
+  color: lime;
+  border-right: .1em solid;
+  width: 16.5em; /* fallback */
+  width: 48ch;   /* # chars */
+  margin: 2em 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 5s steps(42, end), blink-caret .5s step-end infinite alternate;
+     -moz-animation: typing 5s steps(42, end), blink-caret .5s step-end infinite alternate;
+       -o-animation: typing 5s steps(42, end), blink-caret .5s step-end infinite alternate;
+          animation: typing 5s steps(42, end), blink-caret .5s step-end infinite alternate;
+}
+
+/* Fade Icons in */
+a.footer-img {
+  -webkit-animation: fadein 10s;
+     -moz-animation: fadein 10s;
+       -o-animation: fadein 10s;
+          animation: fadein 10s;
+}
+
+/* Icon specs */
+img {
+  transition: background-color 0.5s ease;
+  background-color: #666;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  border-radius:100%;
+}
+
+img:hover {
+  background-color: #BBB;
+}
+
+/* Sticky footer specs */
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -155px;
+}
+
+#footer {
+  bottom:10px;
+  height:30;
+  right:0%;
+  left:0%;
+  position:fixed!important;
+  position:absolute;
+  width=100%;
+  top:expression((0-(footer.offsetHeight)+
+  (document.documentElement.clientHeight?
+  document.documentElement.clientHeight:
+  document.body.clientHeight)+(ignoreMe=document.documentElement.scrollTop?
+  document.documentElement.scrollTop:document.body.scrollTop))+'px');
+  text-align:center;
+  visibility:visible;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #333;
+}
+
+/* Nav specs */
+.links {
+  font: bold 200% Glass_TTY_VT220, monospace;
+  color: lime;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  opacity: 0.5;
+  -webkit-animation: fadein 10s;
+     -moz-animation: fadein 10s;
+       -o-animation: fadein 10s;
+          animation: fadein 10s;
+}
+
+.links:hover {
+  opacity: 1;
+}
+
