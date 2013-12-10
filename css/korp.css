@@ -34,12 +34,14 @@ div.site-nav {
 
 /* Header */
 h1 {
-  font: bold 200% VT220, monospace;
+  font: bold 3vw VT220, monospace;
+  /*font: bold 200% VT220, monospace;*/
   color: lime;
   border-right: .1em solid;
   width: 16.5em; /* fallback */
   width: 53ch;   /* # chars */
   margin: 4em 1em;
+  /*width:100%;*/
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: typing 5s steps(50, end), blink-caret .5s step-end infinite alternate;
@@ -101,7 +103,7 @@ img:hover {
 
 /* Nav specs */
 .links {
-  font: bold 200% Glass_TTY_VT220, monospace;
+  font: bold 3vw VT220, monospace;
   color: lime;
   margin-left: 5px;
   margin-right: 5px;
@@ -119,7 +121,7 @@ img:hover {
 }
 
 code.history {
-  font: bold 100% VT220, monospace;
+  font: bold 1.4vw VT220, monospace;
   color: lime;
   border-right: .1em solid;
   margin-left: 1em;
@@ -127,7 +129,7 @@ code.history {
 }
 
 #resume {
-  font: bold 100% Glass_TTY_VT220, monospace;
+  font: bold 1.5vw VT220, monospace;
   color: #077D98;
   opacity: 0.75;
   text-align: right;
@@ -165,11 +167,11 @@ code.history {
   width: 40%
 }
 
+/* Logo */
 .logo {
-  font: bold 300% Glass_TTY_VT220, monospace;
+  font: bold 3vw VT220, monospace;
   color: lime;
   text-align: left;
   text-decoration: none;
   font-weight: 900;
-  /*position:fixed;*/
 }
