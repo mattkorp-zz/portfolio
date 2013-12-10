@@ -35,13 +35,11 @@ div.site-nav {
 /* Header */
 h1 {
   font: bold 3vw VT220, monospace;
-  /*font: bold 200% VT220, monospace;*/
   color: lime;
   border-right: .1em solid;
   width: 16.5em; /* fallback */
   width: 53ch;   /* # chars */
   margin: 4em 1em;
-  /*width:100%;*/
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: typing 5s steps(50, end), blink-caret .5s step-end infinite alternate;
@@ -79,7 +77,6 @@ img:hover {
   height: 100%;
   margin: 0 auto -155px;
 }
-
 
 #footer {
   bottom:0px;
