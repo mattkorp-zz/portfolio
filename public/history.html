@@ -7,19 +7,19 @@
 
   <title>Matt Korp</title>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/korp.css">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/korp.css">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
-  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 
 </head>
 <body>
   <div class="site-nav">
     <div class="lt-nav">
-      <a class="logo" href="/index.html">>MTK</a>
+      <a class="logo" href="/index.html">> MTK</a>
     </div>
     <div class="rt-nav">
       <a href="https://skrinko.github.io" class="links">Blog</a>
@@ -33,7 +33,7 @@
     <div class="lt-column">
       <pre class="history"><code class="history">
   -- MATT KORPORAAL - History --
-     <a id="resume" href="./files/Matthew_Korporaal_Resume.pdf" target="_blank" type="application/octet-stream" download="MTK_resume">Download Full Resume</a>
+     <a id="resume" href="../files/Matthew_Korporaal_Resume.pdf" target="_blank" type="application/octet-stream" download="MTK_resume">Download Full Resume</a>
 
   -- RELEVANT EXPERIENCE::
   |
@@ -130,35 +130,33 @@
    |-- MVC Architecture
    |-- Test & Behavior Driven Development
    `-- Relational Data Modeling
-
-
-
       </code></pre>
     </div>
   </div>
 
   <div id="footer">
     <a href="https://linkedin.com/mattko" class="footer-img">
-        <img src="img/linkedin-64-black.png" alt="LinkedIN"></a>
+        <img class="foot-icons" src="../img/linkedin-64-black.png" alt="LinkedIN"></a>
     <a href="http://github.com/skrinko" class="footer-img">
-        <img src="img/github-64-black.png" alt="GitHub"></a>
+        <img class="foot-icons" src="../img/github-64-black.png" alt="GitHub"></a>
     <a href="mailto:matt@korp.me" class="footer-img">
-        <img src="img/email-64-black.png" alt="Email">
+        <img class="foot-icons" src="../img/email-64-black.png" alt="Email">
     </a>
   </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='//www.google-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-XXXXX-X');ga('send','pageview');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46367036-1', 'korp.me');
+  ga('send', 'pageview');
+
   </script>
 </body>
 </html>

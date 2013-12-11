@@ -22,17 +22,72 @@
   src: url('../font/Glass_TTY_VT220.ttf')
 }
 
+@font-face
+{
+  font-family: open-sans;
+  src: url('../font/OpenSans-Light.ttf')
+}
+
 /* Nav Links */
+/* Logo */
+div a.logo {
+  font: bold 3vw VT220, monospace;
+  color: lime;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 900;
+  -webkit-animation: fadein 10s;
+     -moz-animation: fadein 10s;
+       -o-animation: fadein 10s;
+          animation: fadein 10s;
+}
+
 div.site-nav {
   width: 100%;
-  text-align: right;
   font-size: 0.8em;
   padding-top: 10px;
   padding-bottom: 40px;
   background: #333;
 }
+.lt-nav {
+  float: left;
+  margin: 0;
+  width: 15%;
+}
+.rt-nav {
+  float: left;
+  margin: 0;
+  width: 85%;
+  text-align: right;
+}
 
-/* Header */
+.links {
+  font: bold 3vw VT220, monospace;
+  color: lime;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  opacity: 0.75;
+  -webkit-animation: fadein 10s;
+     -moz-animation: fadein 10s;
+       -o-animation: fadein 10s;
+          animation: fadein 10s;
+}
+.links:hover {
+  opacity: 1;
+}
+
+/* Main */
+/* Index */
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -155px;
+}
+
 h1 {
   font: bold 3vw VT220, monospace;
   color: lime;
@@ -48,36 +103,73 @@ h1 {
           animation: typing 5s steps(50, end), blink-caret .5s step-end infinite alternate;
 }
 
+/* History */
+code.history {
+  font: bold 1.4vw VT220, monospace;
+  color: lime;
+  border-right: .1em solid;
+  margin-left: 1em;
+  white-space: pre-wrap;
+}
+
+#resume {
+  font: bold 1.5vw VT220, monospace;
+  color: #AAA;
+  opacity: 0.5;
+  text-align: right;
+  text-decoration: none;
+}
+#resume:hover {
+  opacity: 1;
+}
+
+#content-box {
+  margin: 0 auto;
+  width: 100%;
+}
+.lt-column {
+  float: left;
+  margin: 0;
+  width: 60%;
+}
+.rt-column {
+  float: left;
+  margin: 0;
+  width: 40%
+}
+
+/* Portfolio */
+.port-box {
+  position: relative;
+  margin: 40px auto;
+}
+.pic-column {
+  float: left;
+  margin: 0;
+  width: 50%;
+
+}
+.info-column {
+  float: left;
+  margin: 0;
+  width: 50%
+}
+p {
+  color: #DDD;
+  font-family: open-sans;
+}
+
+#graff-img {
+  max-width:500px;
+  max-height:300px;
+}
+#copo-img {
+  max-width:500px;
+  max-height:300px;
+}
+
+/* FOOTER specs */
 /* Fade Icons in */
-a.footer-img {
-  -webkit-animation: fadein 10s;
-     -moz-animation: fadein 10s;
-       -o-animation: fadein 10s;
-          animation: fadein 10s;
-}
-
-/* Icon specs */
-img {
-  transition: background-color 0.5s ease;
-  background-color: #666;
-  height: 40px;
-  width: 40px;
-  margin: 5px;
-  border-radius:100%;
-}
-
-img:hover {
-  background-color: #BBB;
-}
-
-/* Sticky footer specs */
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -155px;
-}
-
 #footer {
   bottom:0px;
   height:30;
@@ -98,77 +190,26 @@ img:hover {
   background: #333;
 }
 
-/* Nav specs */
-.links {
-  font: bold 3vw VT220, monospace;
-  color: lime;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 5px;
-  text-decoration: none;
-  opacity: 0.75;
+a.footer-img {
   -webkit-animation: fadein 10s;
      -moz-animation: fadein 10s;
        -o-animation: fadein 10s;
           animation: fadein 10s;
 }
 
-.links:hover {
-  opacity: 1;
+/* Icon specs */
+img.foot-icons {
+  transition: background-color 0.5s ease;
+  background-color: #666;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  border-radius:100%;
+}
+img.foot-icons:hover {
+  background-color: #BBB;
 }
 
-code.history {
-  font: bold 1.4vw VT220, monospace;
-  color: lime;
-  border-right: .1em solid;
-  margin-left: 1em;
-  white-space: pre-wrap;
-}
 
-#resume {
-  font: bold 1.5vw VT220, monospace;
-  color: #077D98;
-  opacity: 0.75;
-  text-align: right;
-  text-decoration: none;
-}
 
-#resume:hover {
-  opacity: 1;
-}
-#content-box {
-  margin: 0 auto;
-  width: 100%;
-}
-.lt-nav {
-  float: left;
-  margin: 0;
-  width: 15%;
-}
-.rt-nav {
-  float: left;
-  margin: 0;
-  width: 85%;
-  text-align: right;
-}
 
-.lt-column {
-  float: left;
-  margin: 0;
-  width: 60%;
-}
-
-.rt-column {
-  float: left;
-  margin: 0;
-  width: 40%
-}
-
-/* Logo */
-.logo {
-  font: bold 3vw VT220, monospace;
-  color: lime;
-  text-align: left;
-  text-decoration: none;
-  font-weight: 900;
-}
