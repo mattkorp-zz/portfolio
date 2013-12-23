@@ -45,7 +45,6 @@ div a.logo {
 
 div.site-nav {
   width: 100%;
-  font-size: 0.8em;
   padding-top: 10px;
   padding-bottom: 40px;
   background: #333;
@@ -53,12 +52,13 @@ div.site-nav {
 .lt-nav {
   float: left;
   margin: 0;
-  width: 15%;
+  width: 20%;
+  text-align: left;
 }
 .rt-nav {
   float: left;
   margin: 0;
-  width: 85%;
+  width: 80%;
   text-align: right;
 }
 
@@ -139,9 +139,27 @@ code.history {
 }
 
 /* Portfolio */
+div.port-box {
+  background: #333;
+  width: 95%;
+  border-radius: 5px;
+-moz-box-shadow: 0 0 5px 5px  #222;
+-webkit-box-shadow: 0 0 5px 5px #222;
+box-shadow: 0 0 5px 5px  #222;
+}
 .port-box {
   position: relative;
   margin: 40px auto;
+}
+
+.port-box img {
+  width: 100%;
+  height: auto;
+  margin: 15px;
+  border-radius: 5px;
+-moz-box-shadow: 0 0 5px 5px  #222;
+-webkit-box-shadow: 0 0 5px 5px #222;
+box-shadow: 0 0 5px 5px  #222;
 }
 .pic-column {
   float: left;
@@ -149,14 +167,21 @@ code.history {
   width: 50%;
 
 }
+pre.info-column {
+  margin-left: 25px;
+  margin-top: 10px;
+}
 .info-column {
   float: left;
-  margin: 0;
+  /*margin: 15px;*/
   width: 50%
+  width: 45%;
+
 }
-p {
+code#port-info {
   color: #DDD;
-  font-family: open-sans;
+  font-family: 'PT Mono', sans-serif;
+  font-size: 1.2vw;
 }
 
 #graff-img {
@@ -179,10 +204,10 @@ p {
   position:absolute;
   width=100%;
   top:expression((0-(footer.offsetHeight)+
-  (document.documentElement.clientHeight?
-  document.documentElement.clientHeight:
-  document.body.clientHeight)+(ignoreMe=document.documentElement.scrollTop?
-  document.documentElement.scrollTop:document.body.scrollTop))+'px');
+    (document.documentElement.clientHeight?
+     document.documentElement.clientHeight:
+     document.body.clientHeight)+(ignoreMe=document.documentElement.scrollTop?
+     document.documentElement.scrollTop:document.body.scrollTop))+'px');
   text-align:center;
   visibility:visible;
   padding-top: 5px;
@@ -211,5 +236,19 @@ img.foot-icons:hover {
 }
 
 
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+ .port-box .pic-column {
+   float: none;
+ }
+}
 
+/*div {
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  -o-transform:rotateY(180deg);
+  -ms-transform:rotateY(180deg);
+  unicode-bidi:bidi-override;
+  direction:rtl;
+  }*/
 
